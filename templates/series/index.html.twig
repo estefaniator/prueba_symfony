@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SeriesController!{% endblock %}
+
+{% block body %}
+<h1>Formulario</h1>
+
+{{form(formulario)}}
+{% for series in series %}
+<tr>
+    <td>{{ series.anno }}</td>
+    <td>{{ series.creador }}</td>
+    
+</tr>
+{% endfor %}
+{% endblock %}
